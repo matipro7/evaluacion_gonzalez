@@ -59,7 +59,7 @@ public class evaluacion {
 }	
 }
 }
-	System.out.println("Numero a buscar: ");
+	System.out.println("Numero de jugador a buscar: ");
 	int numeroingresado = entrada.nextInt();
 	
 	for (int i= 0; i <camiseta.size(); i++ )
@@ -68,7 +68,7 @@ public class evaluacion {
 		if (numeroingresado == camiseta.get(i)) {
 		
 	 System.out.println("su nombre es: " + nombre.get(i));
-	 System.out.println("su numero de caiseta es: " + camiseta.get(i));
+	 System.out.println("su numero de camiseta es: " + camiseta.get(i));
 	 
 	 		System.out.println("Desea modificar su apellido? (S/N):" );
 	 		char decision = entrada.next().charAt(0);
@@ -85,17 +85,23 @@ public class evaluacion {
 	 			System.out.println("Apellido: "+ nombre.get(i));
 	 			}
 	 			
-	 			else {
+	 			else if (decision == 'n' || decision == 'N' ){
+	 				
+	 				
+	 			}
+	 			
+	 			
+	 				else {
 	 				
 	 				System.out.println("ingresó una opción incorrecta");
-	 			}
 	 		}
 		
-					System.out.println("Programa Finalizado...");
-	}
+					
+	}		
+				System.out.println("Programa Finalizado...");
 	
 	}
-	
+}
 	
 	
 	
